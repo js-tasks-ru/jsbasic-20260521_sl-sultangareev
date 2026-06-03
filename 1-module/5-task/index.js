@@ -1,18 +1,10 @@
 function truncate(str, maxlength) {
 
-  str_length = str.length;
-  console.log('Длина строки:', str_length, typeof str_length, 'Ограничение:', maxlength, typeof maxlength);
+  console.log('Длина строки:', str.length, typeof str.length, 'Ограничение:', maxlength, typeof maxlength);
 
-  if (str_length > maxlength) {
-    console.log('срезаем..')
+  if (str.length > maxlength) {
 
-    str_slice = str.slice(0, maxlength - 1);
-
-    console.log(str_slice);
-
-    final_str = str_slice + '…';
-
-    return final_str
+    return str.slice(0, maxlength - 1) + '…'
   }
 
   return str
